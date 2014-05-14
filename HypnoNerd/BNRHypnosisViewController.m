@@ -47,6 +47,12 @@
     self.view = backgroundView;
 }
 
+-(void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    NSLog(@"HVC viewWillAppear:");
+}
+
 -(void) viewDidLoad
 {
     [super viewDidLoad];

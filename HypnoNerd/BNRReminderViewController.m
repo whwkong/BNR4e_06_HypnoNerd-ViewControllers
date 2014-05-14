@@ -58,5 +58,13 @@
     NSLog(@"RVC viewDidLoad");
 }
 
+-(void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    NSLog(@"RVC viewWillAppear:");
+    
+    self.datePicker.minimumDate = [NSDate dateWithTimeIntervalSinceNow:60];
+}
+
 @end
 
